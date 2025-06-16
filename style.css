@@ -51,11 +51,21 @@ body {
     border-radius: 8px;
   }
   
-/* body{
 
-} */
+/*nav stuff*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+}
+
+li {
+  float: left;
+}
 
 .logo{
-    width: 250px;
+    width: 220px;
     height: 100px;
 }
