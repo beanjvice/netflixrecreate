@@ -52,13 +52,23 @@ body {
   }
   
 
-/*nav stuff*/
+/*arisa css*/
+
+h1{
+  font-family: 'Gotham', 'Bebas Neue', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#fff;
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color:transparent;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 li {
@@ -66,10 +76,26 @@ li {
 }
 
 .logo{
-    width: 220px;
-    height: 100px;
+    width: 180px;
+    height: 80px;
+    margin-left: 110px;
 }
 
-/* #language{
+.top-section {
+  background-image: url('assests/netflixbg.png');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
 
-} */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
