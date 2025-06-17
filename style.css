@@ -56,8 +56,8 @@ body {
 
 h1{
   font-family: 'Gotham', 'Bebas Neue', Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.3rem;
+  font-weight: 1000;
   color:#fff;
   text-align: center;
 }
@@ -70,9 +70,42 @@ ul {
   background-color:transparent;
   background: rgba(0, 0, 0, 0.8);
 }
+#signinbtn{
+  background-color: #e50914;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Gotham', 'Bebas Neue', Arial, sans-serif;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+  height: 33px;
+  margin-left: 1000px;
+  margin-bottom:0;
+}
+
+#signinbtn:hover{
+  background-color: #c80a14;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.textbox{ 
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
 
 li {
   float: left;
+  margin: 0;
+  padding: 14px 16px;
 }
 
 .logo{
@@ -86,6 +119,7 @@ li {
   background-size: cover;
   background-position: center;
   height: 600px;
+  margin-top: 0;
 }
 
 
