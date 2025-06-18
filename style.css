@@ -206,3 +206,70 @@ li {
   text-align: center;
   padding: 0 20px;
 }
+
+
+
+
+
+
+
+
+body {
+  background-color: #000;
+  color: #757575;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.netflix-footer {
+  background-color: #000;
+  padding: 40px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact {
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.footer-links a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.language-select button {
+  background: transparent;
+  border: 1px solid #757575;
+  color: #757575;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 12px;
+  margin-top: 30px;
+}
