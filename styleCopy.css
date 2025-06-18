@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .container {
+    padding: 30px 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  
+  .movie {
+    position: relative;
+    width: 140px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie:hover {
+    transform: scale(1.1);
+  }
+  
+  .movie img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .rank {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px 7px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  
+  .features-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature {
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  .reasons {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .reasons h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: left;
+    flex: 1 1 220px;
+    position: relative;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
