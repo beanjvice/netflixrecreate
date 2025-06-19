@@ -5,6 +5,58 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+#navbar {
+  padding: 10px 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#language {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#signinbtn {
+  background-color: #e50914;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 33px;
+}
+
+#signinbtn:hover {
+  background-color: #c80a14;
+  transition: 0.3s ease;
+}
+
 .container {
   padding: 30px 20px;
 }
@@ -77,6 +129,7 @@ body {
   font-size: 14px;
   color: #ccc;
 }
+
 .reasons {
   background-color: #000;
   color: #fff;
@@ -124,14 +177,12 @@ body {
   right: 20px;
 }
 
-
 /*arisa css*/
-
-h1{
+h1 {
   font-family: 'Gotham', 'Bebas Neue', Arial, sans-serif;
   font-size: 3.3rem;
   font-weight: 1000;
-  color:#fff;
+  color: #fff;
   text-align: center;
 }
 
@@ -140,31 +191,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:transparent;
+  background-color: transparent;
   background: rgba(0, 0, 0, 0.8);
 }
-#signinbtn{
-  background-color: #e50914;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: 'Gotham', 'Bebas Neue', Arial, sans-serif;
-  color: white;
-  padding: 5px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 80px;
-  height: 33px;
-  margin-left: 1000px;
-  margin-bottom:0;
-}
 
-#signinbtn:hover{
-  background-color: #c80a14;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.textbox{ 
+.textbox {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -176,15 +207,8 @@ ul {
 }
 
 li {
-  float: left;
   margin: 0;
   padding: 14px 16px;
-}
-
-.logo{
-    width: 180px;
-    height: 80px;
-    margin-left: 110px;
 }
 
 .top-section {
@@ -195,7 +219,6 @@ li {
   margin-top: 0;
 }
 
-
 .overlay {
   background: rgba(0, 0, 0, 0.8);
   height: 100%;
@@ -205,20 +228,6 @@ li {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-}
-
-
-
-
-
-
-
-
-body {
-  background-color: #000;
-  color: #757575;
-  font-family: Arial, sans-serif;
-  margin: 0;
 }
 
 .netflix-footer {
@@ -272,4 +281,63 @@ body {
 .disclaimer {
   font-size: 12px;
   margin-top: 30px;
+}
+
+
+/* faq */
+
+.faq-section {
+  max-width: 500px;
+  margin-top: 200px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.faq-question {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 18px 20px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #222;
+  color: #ddd;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px; /* adjust as needed */
+  padding: 15px 20px;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
 }
